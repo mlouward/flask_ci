@@ -12,7 +12,7 @@ def index():
     return "<h1> Hello! </h1>"
 
 # Count the number of visits with Redis database.
-@app.route("visit")
+@app.route("/visit")
 def visit_count():
     try:
         visits = redis.incr("counter")
