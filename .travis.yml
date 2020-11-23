@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+before-script:
+  - docker compose up -d --build
+script:
+  - docker-compose exec flaskapp python test_base.py
+after-script:
+  - docker-compose down
