@@ -1,3 +1,4 @@
+from redis import Redis
 from flaskapp import app
 import unittest
 
