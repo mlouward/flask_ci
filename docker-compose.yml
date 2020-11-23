@@ -7,7 +7,7 @@ services:
     build: 
       context: "./app"
       dockerfile: "Dockerfile"
-    image: "flask:latest"
+    image: "flaskapp:latest"
     ports: 
       - "3001:80"
     depends_on: 
